@@ -56,7 +56,7 @@ function startTimer() {
     timerInterval = setInterval(() => {
         timeLeft--;
         document.getElementById('timer').innerText = timeLeft;
-        
+
         // Tick-tock sound for last 3 seconds
         if (timeLeft <= 3 && timeLeft > 0) {
             tickTockSound.play();
