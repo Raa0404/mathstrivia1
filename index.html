@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-screen">
+        <h1>Mathematics Trivia Battle</h1>
+        <label for="player1-name">Player 1 Name:</label>
+        <input type="text" id="player1-name" placeholder="Enter Player 1 Name">
+        
+        <label for="player2-name">Player 2 Name:</label>
+        <input type="text" id="player2-name" placeholder="Enter Player 2 Name">
+        
+        <button id="start-game-btn">Start Game</button>
+    </div>
+    
+    <div class="game-screen" style="display: none;">
+        <h2>Time Left: <span id="timer">60</span> seconds</h2>
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="answers">
+                <button class="answer" id="answer-a"></button>
+                <button class="answer" id="answer-b"></button>
+                <button class="answer" id="answer-c"></button>
+                <button class="answer" id="answer-d"></button>
+            </div>
+        </div>
+        <div id="scoreboard">
+            <p id="player1-score">Player 1: 0</p>
+            <p id="player2-score">Player 2: 0</p>
+        </div>
+    </div>
+    
+    <div class="result-screen" style="display: none;">
+        <h1 id="winner"></h1>
+        <button id="restart-btn">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
